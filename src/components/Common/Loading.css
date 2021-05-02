@@ -1,0 +1,18 @@
+.loading {
+    width: 100%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 100000000;
+}
+
+.loading-spinner {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+    border-right-color: var(--main-color) !important;
+    border-color: var(--secondary-color);
+}

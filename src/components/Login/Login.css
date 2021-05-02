@@ -1,0 +1,36 @@
+.login {
+   position: relative;
+   height: 100vh;
+}
+
+.login-container {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.login-btn {
+   width: 250px;
+   height: 50px;
+   line-height: 40px;
+   border: 1px solid;
+   display: flex;
+   justify-content: space-between;
+   align-content: center;
+   color: var(--white-color) !important;
+   background-color: #4086f4;
+   padding: 4px 5px;
+   font-weight: 500;
+   border: none;
+   border-radius: var(--radius);
+   margin: 0 auto;
+}
+
+.login-btn img {
+   background-color: var(--white-color);
+}
+
+.login-btn span {
+   margin-right: 10px;
+}
