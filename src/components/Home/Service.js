@@ -3,7 +3,7 @@ import { useHistory } from 'react-router';
 
 const Service = ({ _id, name, description, price, imageURL }) => {
    const history = useHistory();
-
+   console.log(name);
    const handleServiceClick = (id) => {
       history.push(`/dashboard/book/${id}`);
    };

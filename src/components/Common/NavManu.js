@@ -19,9 +19,8 @@ const NavManu = () => {
                   <Link to="/" className="nav-link">
                   ʜᴏᴍᴇ
                   </Link>
-                  <Link to="/dashboard" className="nav-link">
-                  ᴅᴀꜱʜʙᴏᴀʀᴅ
-                  </Link>
+                  <Link to="/Iptv" className="nav-link">ɪᴘᴛᴠ</Link>
+                  <Link to="/dashboard" className="nav-link">ᴅᴀꜱʜʙᴏᴀʀᴅ</Link>
                   {loggend.email ? (
                      <button
                         type="button"

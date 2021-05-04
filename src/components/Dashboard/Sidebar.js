@@ -57,6 +57,17 @@ const Sidebar = () => {
                             <FontAwesomeIcon icon={faPlus} /> Add Service
                         </NavLink>
                     </li>
+                    {/* add ip tv service */}
+                    <li>
+                        <NavLink
+                            className="nav-link"
+                            to="/dashboard/addIptv"
+                            activeClassName="sidebar-selected"
+                        >
+                            <FontAwesomeIcon icon={faPlus} /> Add IpTv
+                        </NavLink>
+                    </li>
+
                     <li>
                         <NavLink
                             className="nav-link"

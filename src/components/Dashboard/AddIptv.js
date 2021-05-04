@@ -7,7 +7,7 @@ import { useForm } from 'react-hook-form';
 import AlertMessage from '../Common/AlertMessage';
 import Sidebar from './Sidebar';
 
-const AddServices = () => {
+const AddIptv = () => {
    const [imageURL, setImageURL] = useState('');
    const [alertShow, setAlertShow] = useState(false);
    const [alertErrShow, setAlertErrShow] = useState(false);
@@ -19,19 +19,18 @@ const AddServices = () => {
    } = useForm();
 
    const onSubmit = (data) => {
-      const { name, price, description } = data;
+      const { name,  description } = data;
 
-      const servicesData = {
+      const ipServicesData = {
          name,
-         price,
          description,
          imageURL,
       };
 
       axios
          .post(
-            'http://localhost:8000/addServices',
-            servicesData
+            'http://localhost:8000/addIptv',
+            ipServicesData
          )
          .then(() => {
             setAlertShow(true);
@@ -71,7 +70,7 @@ const AddServices = () => {
                      <AlertMessage
                         variant="success"
                         closeBtn={() => setAlertShow(false)}
-                        text="Services added successfully!"
+                        text="IP Services added successfully!"
                      />
                   )}
                   {alertErrShow && (
@@ -89,7 +88,7 @@ const AddServices = () => {
                               {...register('name', {
                                  required: true,
                               })}
-                              placeholder="Service Name*"
+                              placeholder="IP Service Name*"
                            />
                            {errors.name && (
                               <Form.Text className="text-danger">
@@ -98,20 +97,7 @@ const AddServices = () => {
                            )}
                         </Form.Group>
                      </Col>
-                     <Col md={6}>
-                        <Form.Group>
-                           <Form.Control
-                              type="number"
-                              {...register('price', {
-                                 required: true,
-                              })}
-                              placeholder="Price*"
-                           />
-                           {errors.price && (
-                              <Form.Text className="text-danger">Price is required!</Form.Text>
-                           )}
-                        </Form.Group>
-                     </Col>
+                     
                      <Col md={6}>
                         <Form.Group>
                            <Form.File
@@ -142,7 +128,7 @@ const AddServices = () => {
                               {...register('description', {
                                  required: true,
                               })}
-                              placeholder="Description*"
+                              placeholder="IP Service Description*"
                            />
                            {errors.description && (
                               <Form.Text className="text-danger">
@@ -156,8 +142,8 @@ const AddServices = () => {
                      <button
                         className="btn custom-btn book-btn"
                         type="submit"
-                        disabled={!imageURL && true}
-                     >
+                        disabled={!imageURL && true}>
+
                         Submit
                      </button>
                   </div>
@@ -168,4 +154,9 @@ const AddServices = () => {
    );
 };
 
-export default AddServices;
+
+
+
+
+
+export default AddIptv;
