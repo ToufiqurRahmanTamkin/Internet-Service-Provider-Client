@@ -37,7 +37,7 @@ const OrderItem = ({
                      className={bookingStatus}
                   >
                      <option>{bookingStatus}</option>
-                     <option>Panding</option>
+                     <option>Pending</option>
                      <option>On Going</option>
                      <option>Done</option>
                   </Form.Control>

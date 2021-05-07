@@ -43,9 +43,9 @@ const ManageService = () => {
                <Table striped bordered hover size="sm">
                   <thead>
                      <tr>
-                        <th>Service Name</th>
-                        <th>Price</th>
-                        <th>Action</th>
+                        <th className="text-center">Service Names</th>
+                        <th className="text-center">Service Price</th>
+                        <th className="text-center">Action</th>
                      </tr>
                   </thead>
                   <tbody>
