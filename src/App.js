@@ -11,7 +11,7 @@ import ManageService from './components/Dashboard/ManageService';
 import OrderList from './components/Dashboard/OrderList';
 import Review from './components/Dashboard/Review';
 import Home from './components/Home/Home';
-import IpService from './components/Iptv/IpService';
+import IptvData from './components/Iptv/IptvData';
 import Login from './components/Login/Login';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute';
 
@@ -27,7 +27,7 @@ function App() {
             <Switch>
                <Route exact path="/" component={Home} />
                <Route exact path="/login" component={Login} />
-               <Route exact path="/Iptv" component={IpService} />
+               <Route exact path="/Iptv" component={IptvData} />
 
                <PrivateRoute exact path="/dashboard">
                   <Dashboard />

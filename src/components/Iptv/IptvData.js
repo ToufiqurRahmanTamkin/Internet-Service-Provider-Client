@@ -12,12 +12,10 @@ const IptvData = () => {
     useEffect(() =>{
         setLoading(true);
         axios
-            .get('http://localhost:8000/Iptv')
+            .get('http://localhost:8000/iptv')
             .then((res) => {
                 setLoading(false);
-                console.log(res);
                 setIpTv(res.data);
-                // console.log(res.data);
             })
             .catch((err) => console.log(err));
     },[])
@@ -26,14 +24,14 @@ const IptvData = () => {
     }
 
     return (
-        <section >
+        <section className="services py-5">
             <Container>
-                <div >
-                    <h3>Ip 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
+                <div className="title mb-5">
+                    <h3 className="mt-5">Ip 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
                 </div>
                 <Row>
                     {ipTvs.map((ipTv) => (
-                        <Col lg={4} md={6} key={ipTv._id}>
+                        <Col lg={3} md={6} key={ipTv._id}>
                             <IpService {...ipTv} />
                         </Col>
                     ))}
