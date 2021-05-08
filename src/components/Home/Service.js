@@ -4,7 +4,6 @@ import Button from "@material-ui/core/Button";
 
 const Service = ({ _id, name, description, price, imageURL }) => {
   const history = useHistory();
-  console.log(name);
   const handleServiceClick = (id) => {
     history.push(`/dashboard/book/${id}`);
   };
@@ -19,9 +18,7 @@ const Service = ({ _id, name, description, price, imageURL }) => {
         <p>{description}</p>
         <div className="d-flex justify-content-between align-items-center">
           <h6 className="mb-0">${price}</h6>
-          <Button onClick={() => handleServiceClick(_id)} variant="contained" color="primary">
-          get Service
-          </Button>
+          <Button onClick={() => handleServiceClick(_id)} variant="contained" color="primary">get Service</Button>
         </div>
       </div>
     </article>
