@@ -1,14 +1,6 @@
-import {
-   faFacebookF,
-   faInstagram,
-   faTwitter,
-} from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import {
-   faCaretRight,
-   faMapMarkerAlt,
-   faMobileAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faCaretRight, faMapMarkerAlt, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 export const contactInfo = [
    {
