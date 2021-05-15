@@ -1,4 +1,4 @@
-# internet-service-provider-client
+# Internet-Service-Provider(client-side)
 
 This is a single-page react application—a fully functional and fully responsive application for every screen size.
 This application is developed using React Js, Node Js, Express Js, MongoDB, firebase Auth, material-UI, react-bootstrap, font awesome icons, react-stripe, and react-hook-form.
