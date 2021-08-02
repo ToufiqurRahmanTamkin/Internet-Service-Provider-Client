@@ -1,16 +1,28 @@
-# Internet-Service-Provider(client-side)
+# **Internet Service Providing**
 
-This is a single-page react application—a fully functional and fully responsive application for every screen size.
-This application is developed using React Js, Node Js, Express Js, MongoDB, firebase Auth, material-UI, react-bootstrap, font awesome icons, react-stripe, and react-hook-form.
+### Front-end Technology :
 
-Users can get internet service according to their choice.
-For getting the service user must log in to the system, which is developed using google firebase auth.
-Once the user logged in to the system, they can get the service. After clicking on it, the user has to pay the required payment to confirm the service.
-The payment method is developed using stripe.
-After that, users can see their service from the dashboard.
+- **React, React-Router-Dom**
+- **material-UI, font awesome icons, stripe**
+- **Firebase auth**
+- **React-Bootstrap**
+- **HTML5, CSS3**
 
-There is a separate dashboard for both users and admins.
-Admin can change the status of the booking of the users. Admins can also add new admins by using the email address and manage everything of the application like add or delete services, adding IPTV service, etc.
+### Back-end Technology :
 
+- **Node JS**
+- **Express**
+- **MongoDB**
 
-[Internet Service Provider backend server repository](https://github.com/ToufiqurRahmanTamkin/internet-service-provider-server)
+<img  width="100%"  height="100%"  src="https://i.ibb.co/Zd2yN4Z/1.png"/>
+<img  width="100%"  height="100%"  src="https://i.ibb.co/PZzCgpS/2.png"/>
+<img  width="100%"  height="100%"  src="https://i.ibb.co/89wpP3K/3.png"/>
+<img  width="100%"  height="100%"  src="https://i.ibb.co/ZzP4DHd/4.png"/>
+<img  width="100%"  height="100%"  src="https://i.ibb.co/DYHDz2Q/5.png"/>
+<img  width="100%"  height="100%"  src="https://i.ibb.co/1KyW2wK/6.png"/>
+
+<hr/>
+
+**[Internet Service Provider backend server repository](https://github.com/ToufiqurRahmanTamkin/internet-service-provider-server)**
+
+<hr/>
