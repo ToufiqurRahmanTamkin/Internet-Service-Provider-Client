@@ -8,7 +8,7 @@ const Testimonials = () => {
 
    useEffect(() => {
       axios
-         .get('http://localhost:8000/reviews')
+         .get('https://isp-server0.herokuapp.com/reviews')
          .then((res) => {
             serReviews(res.data);
          })

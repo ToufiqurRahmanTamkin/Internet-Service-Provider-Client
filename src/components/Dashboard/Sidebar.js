@@ -22,7 +22,7 @@ const Sidebar = () => {
         setLoading(true);
         axios
             .get(
-                `http://localhost:8000/admin?email=${loggend.email}`
+                `https://isp-server0.herokuapp.com/admin?email=${loggend.email}`
             )
             .then((res) => {
                 setLoading(false);

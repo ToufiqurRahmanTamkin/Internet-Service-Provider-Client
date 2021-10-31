@@ -17,7 +17,7 @@ const PaymentForm = ({ id }) => {
 
     useEffect(() => {
         axios
-            .get('http://localhost:8000/services')
+            .get('https://isp-server0.herokuapp.com/services')
             .then((res) => {
                 setServices(res.data);
             })
@@ -61,7 +61,7 @@ const PaymentForm = ({ id }) => {
 
             axios
                 .post(
-                    'http://localhost:8000/addBooking',
+                    'https://isp-server0.herokuapp.com/addBooking',
                     serviceBooking
                 )
                 .then(() => {

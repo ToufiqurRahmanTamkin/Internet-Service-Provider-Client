@@ -29,7 +29,7 @@ const AddIptv = () => {
 
       axios
          .post(
-            'http://localhost:8000/addIptv',
+            'https://isp-server0.herokuapp.com/addIptv',
             ipServicesData
          )
          .then(() => {

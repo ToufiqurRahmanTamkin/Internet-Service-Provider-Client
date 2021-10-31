@@ -31,7 +31,7 @@ const Review = () => {
 
       axios
          .post(
-            'http://localhost:8000/addReviews',
+            'https://isp-server0.herokuapp.com/addReviews',
             userInfo
          )
          .then(() => {

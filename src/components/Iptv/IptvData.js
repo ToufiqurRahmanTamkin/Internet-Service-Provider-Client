@@ -12,7 +12,7 @@ const IptvData = () => {
     useEffect(() =>{
         setLoading(true);
         axios
-            .get('http://localhost:8000/iptv')
+            .get('https://isp-server0.herokuapp.com/iptv')
             .then((res) => {
                 setLoading(false);
                 setIpTv(res.data);

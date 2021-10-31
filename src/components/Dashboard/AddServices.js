@@ -30,7 +30,7 @@ const AddServices = () => {
 
       axios
          .post(
-            'http://localhost:8000/addServices',
+            'https://isp-server0.herokuapp.com/addServices',
             servicesData
          )
          .then(() => {

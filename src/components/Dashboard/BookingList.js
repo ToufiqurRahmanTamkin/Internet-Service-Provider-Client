@@ -12,7 +12,7 @@ const BookingList = () => {
    useEffect(() => {
       axios
          .get(
-            `http://localhost:8000/bookings?email=${loggend.email}`
+            `https://isp-server0.herokuapp.com/bookings?email=${loggend.email}`
          )
          .then((res) => {
             setBookings(res.data);

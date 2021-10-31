@@ -22,7 +22,7 @@ const MakeAdmin = () => {
     };
 
     axios
-      .post("http://localhost:8000/addAdmin", adminEmail)
+      .post("https://isp-server0.herokuapp.com/addAdmin", adminEmail)
       .then(() => {
         setAlertShow(true);
         setAlertErrShow(false);

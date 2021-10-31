@@ -12,7 +12,7 @@ const ManageService = () => {
 
    useEffect(() => {
       axios
-         .get('http://localhost:8000/services')
+         .get('https://isp-server0.herokuapp.com/services')
          .then((res) => {
             setServices(res.data);
          })

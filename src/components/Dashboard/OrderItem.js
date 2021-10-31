@@ -17,7 +17,7 @@ const OrderItem = ({
 
    axios
       .patch(
-         `http://localhost:8000/bookingUpdate/${_id}`,
+         `https://isp-server0.herokuapp.com/bookingUpdate/${_id}`,
          { updateValue }
       )
       .then((res) => console.log('Status Updated!'))
