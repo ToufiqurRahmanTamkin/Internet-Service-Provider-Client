@@ -45,7 +45,7 @@ const AddIptv = () => {
 
    const handleImageUpload = (event) => {
       const imageData = new FormData();
-      imageData.set('key', 'd6625af22f14cd0f9c8816646b49b47f');
+      imageData.set('key', 'ceb58f5897e5b82a5c60b14f0015f7a6');
       imageData.append('image', event.target.files[0]);
 
       axios

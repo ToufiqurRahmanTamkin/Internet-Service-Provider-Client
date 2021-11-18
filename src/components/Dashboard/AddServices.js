@@ -46,7 +46,7 @@ const AddServices = () => {
 
    const handleImageUpload = (event) => {
       const imageData = new FormData();
-      imageData.set('key', '78b094834d25da2322ac3593b2280b62');
+      imageData.set('key', 'ceb58f5897e5b82a5c60b14f0015f7a6');
       imageData.append('image', event.target.files[0]);
 
       axios
