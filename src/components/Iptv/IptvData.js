@@ -27,7 +27,7 @@ const IptvData = () => {
         <section className="services py-5">
             <Container>
                 <div className="title mb-5">
-                    <h3 className="mt-5">Ip 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
+                    <h3 className="mt-5">IP 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
                 </div>
                 <Row>
                     {ipTvs.map((ipTv) => (
