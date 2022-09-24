@@ -11,7 +11,7 @@ const Services = () => {
     useEffect(() => {
         setLoading(true);
         axios
-            .get('https://isp-server0.herokuapp.com/services')
+            .get('https://internet-service-provider-server.vercel.app/services')
             .then((res) => {
                 setLoading(false);
                 setServices(res.data);
@@ -30,7 +30,7 @@ const Services = () => {
                     <h3>𝐎𝐮𝐫 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
                 </div>
                 <Row>
-                    {services.map((service) => (
+                    {services.length > 0 && services.map((service) => (
                         <Col lg={4} md={6} key={service._id}>
                             <Service {...service} />
                         </Col>

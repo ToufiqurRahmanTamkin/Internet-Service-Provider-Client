@@ -17,7 +17,7 @@ const OrderItem = ({
 
    axios
       .patch(
-         `https://isp-server0.herokuapp.com/bookingUpdate/${_id}`,
+         `https://internet-service-provider-server.vercel.app/bookingUpdate/${_id}`,
          { updateValue }
       )
       .then((res) => console.log('Status Updated!'))

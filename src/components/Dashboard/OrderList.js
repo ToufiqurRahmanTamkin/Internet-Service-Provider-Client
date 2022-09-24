@@ -9,7 +9,7 @@ const OrderList = () => {
 
    useEffect(() => {
       axios
-         .get('https://isp-server0.herokuapp.com/allBookings')
+         .get('https://internet-service-provider-server.vercel.app/allBookings')
          .then((res) => {
             setBookings(res.data);
          })

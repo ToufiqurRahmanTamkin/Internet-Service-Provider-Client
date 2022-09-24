@@ -22,7 +22,7 @@ const Sidebar = () => {
         setLoading(true);
         axios
             .get(
-                `https://isp-server0.herokuapp.com/admin?email=${loggend.email}`
+                `https://internet-service-provider-server.vercel.app/admin?email=${loggend.email}`
             )
             .then((res) => {
                 setLoading(false);

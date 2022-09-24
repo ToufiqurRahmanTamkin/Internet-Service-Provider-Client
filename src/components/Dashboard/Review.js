@@ -31,7 +31,7 @@ const Review = () => {
 
       axios
          .post(
-            'https://isp-server0.herokuapp.com/addReviews',
+            'https://internet-service-provider-server.vercel.app/addReviews',
             userInfo
          )
          .then(() => {

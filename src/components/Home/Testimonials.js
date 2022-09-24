@@ -8,7 +8,7 @@ const Testimonials = () => {
 
    useEffect(() => {
       axios
-         .get('https://isp-server0.herokuapp.com/reviews')
+         .get('https://internet-service-provider-server.vercel.app/reviews')
          .then((res) => {
             serReviews(res.data);
          })
@@ -22,7 +22,7 @@ const Testimonials = () => {
                <h3>𝐔𝐬𝐞𝐫 𝐑𝐞𝐯𝐢𝐞𝐰𝐬</h3>
             </div>
             <Row>
-               {reviews.map((review) => (
+               {reviews.length > 0 && reviews?.map((review) => (
                   <Col md={6} key={review._id}>
                      <Testimonial {...review} />
                   </Col>

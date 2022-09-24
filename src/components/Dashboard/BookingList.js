@@ -12,7 +12,7 @@ const BookingList = () => {
    useEffect(() => {
       axios
          .get(
-            `https://isp-server0.herokuapp.com/bookings?email=${loggend.email}`
+            `https://internet-service-provider-server.vercel.app/bookings?email=${loggend.email}`
          )
          .then((res) => {
             setBookings(res.data);

@@ -30,7 +30,7 @@ const AddServices = () => {
 
       axios
          .post(
-            'https://isp-server0.herokuapp.com/addServices',
+            'https://internet-service-provider-server.vercel.app/addServices',
             servicesData
          )
          .then(() => {

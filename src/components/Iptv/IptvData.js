@@ -9,16 +9,16 @@ const IptvData = () => {
     const [ipTvs, setIpTv] = useState([]);
     const [loading, setLoading] = useState(false);
 
-    useEffect(() =>{
+    useEffect(() => {
         setLoading(true);
         axios
-            .get('https://isp-server0.herokuapp.com/iptv')
+            .get('https://internet-service-provider-server.vercel.app/iptv')
             .then((res) => {
                 setLoading(false);
                 setIpTv(res.data);
             })
             .catch((err) => console.log(err));
-    },[])
+    }, [])
     if (loading) {
         return <Loading />;
     }
@@ -30,7 +30,7 @@ const IptvData = () => {
                     <h3 className="mt-5">IP 𝐒𝐞𝐫𝐯𝐢𝐜𝐞𝐬</h3>
                 </div>
                 <Row>
-                    {ipTvs.map((ipTv) => (
+                    {ipTvs.length > 0 && ipTvs?.map((ipTv) => (
                         <Col lg={3} md={6} key={ipTv._id}>
                             <IpService {...ipTv} />
                         </Col>

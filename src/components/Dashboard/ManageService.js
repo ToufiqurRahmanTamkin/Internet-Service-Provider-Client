@@ -12,7 +12,7 @@ const ManageService = () => {
 
    useEffect(() => {
       axios
-         .get('https://isp-server0.herokuapp.com/services')
+         .get('https://internet-service-provider-server.vercel.app/services')
          .then((res) => {
             setServices(res.data);
          })

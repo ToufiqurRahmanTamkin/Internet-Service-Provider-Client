@@ -22,7 +22,7 @@ const MakeAdmin = () => {
     };
 
     axios
-      .post("https://isp-server0.herokuapp.com/addAdmin", adminEmail)
+      .post("https://internet-service-provider-server.vercel.app/addAdmin", adminEmail)
       .then(() => {
         setAlertShow(true);
         setAlertErrShow(false);

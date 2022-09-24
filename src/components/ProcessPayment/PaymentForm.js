@@ -17,7 +17,7 @@ const PaymentForm = ({ id }) => {
 
     useEffect(() => {
         axios
-            .get('https://isp-server0.herokuapp.com/services')
+            .get('https://internet-service-provider-server.vercel.app/services')
             .then((res) => {
                 setServices(res.data);
             })
@@ -61,7 +61,7 @@ const PaymentForm = ({ id }) => {
 
             axios
                 .post(
-                    'https://isp-server0.herokuapp.com/addBooking',
+                    'https://internet-service-provider-server.vercel.app/addBooking',
                     serviceBooking
                 )
                 .then(() => {

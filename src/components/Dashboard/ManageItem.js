@@ -10,7 +10,7 @@ const ManageItem = ({ _id, name, price, setAlertShow, setAlertErrShow }) => {
   useEffect(() => {
     id &&
       axios
-        .delete(`https://isp-server0.herokuapp.com/services/delete/${id}`)
+        .delete(`https://internet-service-provider-server.vercel.app/services/delete/${id}`)
         .then(() => {
           setAlertShow(true);
           setAlertErrShow(false);

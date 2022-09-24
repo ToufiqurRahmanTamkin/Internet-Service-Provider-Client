@@ -29,7 +29,7 @@ const AddIptv = () => {
 
       axios
          .post(
-            'https://isp-server0.herokuapp.com/addIptv',
+            'https://internet-service-provider-server.vercel.app/addIptv',
             ipServicesData
          )
          .then(() => {
